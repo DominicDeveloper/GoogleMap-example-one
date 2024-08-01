@@ -20,6 +20,8 @@ import com.google.android.gms.tasks.OnCompleteListener
     1. Dasturga kirilishiga aniqlab oladi va o`zgaruvchiga tenglab qo`yish mumkin
     2. Ma`lum bir vaqtda locationni tekshirib turadi
 
+    // bu loyihada bir marta aniqlab olish misol qilindi.
+
  */
 const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
