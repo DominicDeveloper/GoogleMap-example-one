@@ -1,16 +1,13 @@
 package com.asadbek.googlemapfirstexample
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.asadbek.googlemapfirstexample.databinding.ActivityMainBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import com.google.android.gms.tasks.OnCompleteListener
 
 
 /*
@@ -32,6 +29,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getDeviceLocation()
+
+
+        // google map ga o`tish
+        binding.btn.setOnClickListener {
+            val intent = Intent(this, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        // google map jonli xolatda ishlovchi oynaga o`tish
+        binding.btn2.setOnClickListener {
+            val intnet = Intent(this,MapsActivity2::class.java)
+            startActivity(intnet)
+        }
 
     }
 
